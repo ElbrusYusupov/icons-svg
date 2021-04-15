@@ -1,0 +1,350 @@
+:root {
+  --primary-text-color: #757575;
+  --primary-white-color: #ffffff;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --background-dark-color: #2f303a;
+  --background-light-color: #f5f4fa;
+  --logo-text-color: #000000;
+  --transparent-color: rgba(255, 255, 255, 0.6);
+
+  --card-set-gap: 30px;
+  --card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+body {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
+}
+
+/* Селекторы элементов и классов с повторяющимися значениями */
+h2,
+h3,
+a.nav-link,
+.btn-filter {
+  color: var(--title-text-color);
+}
+
+ul {
+  list-style-type: none;
+}
+.hero-btn,
+.btn-filter:hover,
+.btn-filter:focus,
+.hero,
+.footer-section .footer-logo,
+.location {
+  color: var(--primary-white-color);
+}
+.logo-half,
+.link:hover,
+.link:focus,
+a.current {
+  color: var(--accent-color);
+}
+.hero-btn,
+.btn-filter:hover,
+.btn-filter:focus {
+  background-color: var(--accent-color);
+}
+.hero,
+.footer-section {
+  background-color: var(--background-dark-color);
+}
+.team-section,
+.btn-filter {
+  background-color: var(--background-light-color);
+}
+.list,
+.feature-description,
+.features-set,
+.team-set .portfolio-item,
+.card-set,
+.team-set,
+.profession,
+.feature-title,
+.service-set,
+.service-title,
+.team-title,
+.team-member,
+.portfolio-menu,
+address,
+.features-section,
+.portfolio {
+  margin: 0;
+  padding: 0;
+}
+.card-set,
+.filter-list,
+.team-set,
+.service-set,
+.features-set,
+.navigation-menu,
+.nav-list,
+.page-header .contact-list,
+.page-header .container {
+  display: flex;
+}
+.card-set,
+.features-set,
+.service-set,
+.team-set {
+  margin-left: calc(-1 * var(--card-set-gap));
+}
+.feature-item,
+.team-card {
+  flex-basis: calc(100% / 4 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+}
+.card-set > .card-item,
+.service-item {
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+}
+.filter-list,
+.service-title,
+.team-title {
+  margin-bottom: 50px;
+}
+.footer-section,
+.team-section,
+.features-section,
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.container,
+main,
+.footer-section,
+.hero {
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero,
+.service-title,
+.team-title,
+.card-member {
+  text-align: center;
+}
+.list {
+  list-style: none;
+}
+.container {
+  width: 1200px;
+  padding: 0 15px;
+}
+/* /Селекторы элементов и классов с повторяющимися значениями */
+
+/* Header */
+.page-header .container {
+  min-height: 80px;
+}
+.portfolio-header {
+  border-bottom: 1px solid #ececec;
+}
+.logo {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+  color: var(--logo-text-color);
+}
+.navigation-menu,
+.contact-list {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.navigation-menu,
+.nav-list,
+.page-header .contact-list {
+  align-items: center;
+}
+.nav-list {
+  margin-left: 93px;
+}
+.nav-items:not(:last-child),
+.contact-list li:not(:last-child) {
+  margin-right: 50px;
+}
+.page-header .contact-list {
+  margin-left: auto;
+}
+.link {
+  text-decoration: none;
+  color: var(--primary-text-color);
+  padding: 9px 0;
+}
+/* /Header */
+
+/* Main content */
+/* Hero */
+.hero {
+  padding: 200px 0;
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  width: 696px;
+  margin: 0 auto 30px;
+}
+.hero-btn {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  min-width: 200px;
+  border: transparent;
+  border-radius: 4px;
+  padding: 10px 32px;
+  display: inline-block;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  cursor: pointer;
+}
+.hero-btn {
+  border: 0px;
+}
+/* /Hero */
+
+/* About features section */
+.feature-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+/* /About features section */
+
+/* About services section */
+.services-section {
+  padding-bottom: 94px;
+}
+.service-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* /About services section */
+
+/* About team section */
+.team-section {
+  font-size: 16px;
+  line-height: 1.2;
+}
+.team-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+}
+.card-member {
+  background-color: #fff;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.card-member {
+  padding: 30px 50px;
+}
+.team-member {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+/* /About team section */
+/* /Main content */
+
+/* Portfolio content */
+/* Portfolio filter */
+.filter-list {
+  justify-content: center;
+}
+.filter-item:not(:last-child) {
+  margin-right: 8px;
+}
+.btn-filter {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  min-width: 78px;
+  border: transparent;
+  border-radius: 4px;
+  padding: 6px 22px;
+}
+/* /Portfolio filter */
+
+/* Portfolio menu */
+.portfolio-item {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.portfolio-menu {
+  font-size: 16px;
+  line-height: 1.9;
+}
+.card-set {
+  flex-wrap: wrap;
+}
+.card-set > .card-item:nth-child(n + 4) {
+  margin-top: var(--card-set-gap);
+}
+.card {
+  width: 370px;
+  min-height: 404px;
+  overflow: hidden;
+}
+.menu-items {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: 0;
+}
+.portfolio-item {
+  margin-bottom: 4px;
+}
+/* /Portfolio menu */
+/* /Portfolio content */
+
+/* Footer */
+address {
+  margin-top: 20px;
+}
+.contact-footer a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--transparent-color);
+}
+.contact-footer li:not(:last-child) {
+  margin-bottom: 9px;
+}
+.location {
+  font-style: normal;
+  margin-bottom: 9px;
+}
+/* /Footer */
